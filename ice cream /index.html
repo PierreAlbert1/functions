@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ice Cream</h1>
+    <label>
+        Number of scoops: <input id="scoops" value="1" type="number" min="1" max="4">
+    </label><br>
+    <label><input type="radio" name="choice" value="cup" id="cup" > Cone  </label>
+    <label><input type="radio" name="choice" value="cup" id="cup" checked> cup </label>
+
+    <fieldset id="toppings">
+        <legend>Toppings</legend>
+        <label><input type="checkbox" id="sprinkles"> sprinkles ($.50)"></label>
+        <label><input type="checkbox" id="whipped_cream"> Whipped Cream ($.25)"></label>
+        <label><input type="checkbox" id="hot_fudge"> Hot Fudge ($1.25)"></label>
+        <label><input type="checkbox" id="cherry"> Cherry ($.25)"></label>
+    </fieldset>
+    <p><button id="order"> Submit order</button> </p>
+    <table id="output">
+        <tr><th>Base Price: </th><td id="price">$0.00</td></tr>
+        <tr><th>Tax:        </th><td id="price">$0.00</td></tr>
+        <tr><th>Total Due:  </th><td id="price">$0.00</td></tr>
+ </table>
+</body>
+</html>
